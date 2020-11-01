@@ -24,18 +24,27 @@ function List(props) {
     <>
       <li className="list">{item}</li>
       <button
+        className="delete"
         onClick={() => {
           props.onSelect(id);
         }}
       >
         Delete
       </button>
-      <button onClick={onEdit}>Edit</button>
+      <button onClick={onEdit} className="edit">
+        Edit
+      </button>
       <br />
       {edit ? (
         <>
-          <input type="textarea" onChange={addTask} value={task} />
+          <input
+            type="textarea"
+            onChange={addTask}
+            value={task}
+            className="editTask"
+          />
           <button
+            className="saveTask"
             onClick={() => {
               props.onSave(id, task);
               onSave();
