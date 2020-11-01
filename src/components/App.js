@@ -43,7 +43,9 @@ function App() {
       <header>ToDo List</header>
       <br />
       <input type="text" id="task" onChange={addTask} value={task} />
-      <button onClick={onAdd}>Add</button>
+      <button onClick={onAdd} id="btn">
+        Add
+      </button>
       <ol>
         {list.map((item, index) => {
           return (

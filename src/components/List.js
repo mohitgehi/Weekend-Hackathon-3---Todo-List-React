@@ -22,7 +22,7 @@ function List(props) {
 
   return (
     <>
-      <li>{item}</li>
+      <li className="list">{item}</li>
       <button
         onClick={() => {
           props.onSelect(id);
