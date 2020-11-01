@@ -4,7 +4,7 @@ import "./../styles/App.css";
 
 function App() {
   const [task, setTask] = React.useState("");
-  const [list, setList] = React.useState([""]);
+  const [list, setList] = React.useState([]);
 
   const addTask = (event) => {
     if (event.target.value === "") {
